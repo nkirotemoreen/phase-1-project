@@ -58,10 +58,7 @@ copy.addEventListener("click", ()=>{
 //like buttons
 likebtn.classList.toggle("fa-thumbs-down");
 //submit form
-join.addEventListener("click", ()=>{
-  alert("submitted");
 
-});
 
 fetchQuotes()
 
