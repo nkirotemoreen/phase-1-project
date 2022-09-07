@@ -50,6 +50,7 @@ twitter.addEventListener("click", ()=>{
 //copy button
 copy.addEventListener("click", ()=>{
   navigator.clipboard.writeText(text.innerText);
+  alert("successfully copied to clipboard");
 
 });
 
