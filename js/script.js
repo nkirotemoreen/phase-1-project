@@ -2,7 +2,8 @@ const button = document.querySelector(".new-quote");
 const speech = document.getElementById('audio');   
 const copy = document.getElementById('copied');
 const twitter = document.getElementById('tweet');
- const author = document.getElementById("author")
+ const author = document.getElementById("author");
+ const likebtn = document.getElementById('like')
  const text = document.getElementById("text")
  synth = speechSynthesis;
 
@@ -53,6 +54,8 @@ copy.addEventListener("click", ()=>{
   alert("successfully copied to clipboard");
 
 });
+//like buttons
+likebtn.classList.toggle("fa-thumbs-down");
 
 fetchQuotes()
 

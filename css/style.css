@@ -34,7 +34,14 @@
 	font-size: 22px;
 	text-align: center;
   }
-  
+  .container .author{
+	display: flex;
+	font-size: 18px;
+	margin-top: 20px;
+	font-style: italic;
+	justify-content: flex-end;
+	margin-left: 50%;
+  }
   .author span:first-child{
 	margin: -7px 5px 0 0;
 	font-family: monospace;
