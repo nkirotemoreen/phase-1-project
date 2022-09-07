@@ -32,15 +32,15 @@ const fetchQuotes = async()=>{
   }
 
 }
-speech.addEventListener("click", ()=>{
-  if(!button.classList.contains("loading")){
-      let utterance = new SpeechSynthesisUtterance(`${text.innerText} by ${author.innerText}`);
-      synth.speak(utterance);
-      setInterval(()=>{
-          !synth.speaking ? speech.classList.remove("active") : speech.classList.add("active");
-      }, 10);
-  }
-});
+// speech.addEventListener("click", ()=>{
+//   if(!button.classList.contains("loading")){
+//       let utterance = new SpeechSynthesisUtterance(`${text.innerText} by ${author.innerText}`);
+//       synth.speak(utterance);
+//       setInterval(()=>{
+//           !synth.speaking ? speech.classList.remove("active") : speech.classList.add("active");
+//       }, 10);
+//   }
+// });
 //tweet-button
 twitter.addEventListener("click", ()=>{
   let tweetUrl = `https://twitter.com/intent/tweet?url=${text.innerText}`;
