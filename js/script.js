@@ -16,23 +16,23 @@ const fetchQuotes = async()=>{
     const data = await response.json()
     console.log(data)
     
-  //   //getting the random quote
-  //   const index = Math.floor(Math.random() * data.length)
-  //   const quote = data[index].text;//get single quote to display
-  //   const author1 = data[index].author ?? "Anonymous"
-  //   text.innerText = quote;
-  //   author.innerText = author1;
-  //   button.classList.remove("loading");
-  //       button.innerText = "New Quote";
+    //getting the random quote
+    const index = Math.floor(Math.random() * data.length)
+    const quote = data[index].text;//get single quote to display
+    const author1 = data[index].author ?? "Anonymous"
+    text.innerText = quote;
+    author.innerText = author1;
+    button.classList.remove("loading");
+        button.innerText = "New Quote";
     
 
-  // } catch (error) {
-  //   console.log(error.message)
+  } catch (error) {
+    console.log(error.message)
     
-  // }
+  }
 
 }
-//adding speech button
+//adding audio
 speech.addEventListener("click", ()=>{
   if(!button.classList.contains("loading")){
       let utterance = new SpeechSynthesisUtterance(`${text.innerText} by ${author.innerText}`);
