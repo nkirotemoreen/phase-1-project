@@ -4,7 +4,8 @@ const copy = document.getElementById('copied');
 const twitter = document.getElementById('tweet');
  const author = document.getElementById("author");
  const likebtn = document.getElementById('like')
- const text = document.getElementById("text")
+ const text = document.getElementById("text");
+ const join = document.getElementById('submit');
  synth = speechSynthesis;
 
 
@@ -56,6 +57,11 @@ copy.addEventListener("click", ()=>{
 });
 //like buttons
 likebtn.classList.toggle("fa-thumbs-down");
+//submit form
+join.addEventListener("click", ()=>{
+  alert("submitted");
+
+});
 
 fetchQuotes()
 
