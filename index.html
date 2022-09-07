@@ -14,7 +14,9 @@
             <div class="quote-text">
                 <!--get the quotes-->
                 <i class="fas fa-quote-left"></i>
-          <p class="text" id='text'>Quote to be displayed here</p>
+          <p class="text" id='text'>Quote to be displayed here
+
+          </p>
           <i class="fas fa-quote-right"></i>
             </div>
             <div class="author">
@@ -27,11 +29,15 @@
             <div class = "features">
                 <ul>
                     <li class="speech"><i class="fas fa-volume-up"></i></li>
-                    <li class="copy"><i class="fas fa-copy"></i></li>
-<li class="twitter-share-button"
-  href="https://twitter.com/intent/tweet?text=Hello%20world"
-  data-size="large"><i class="fab fa-twitter">
-</li>                  </ul>
+                    <li class="copy" onclick="copyBtn()"><i class="fas fa-copy"></i></li>
+                    <!--twitter button-
+                    <li class="twitter-share-button"
+                    href="https://twitter.com/intent/tweet?text=Hello%20world"
+                    data-size="small"><i class="fab fa-twitter">
+                  </li>  -->  
+                  <li class="twitter" id="tweet"><i class="fab fa-twitter"></i></li>
+              
+              </ul>
                   <button class = "new-quote btn btn-default" 
                   onclick="fetchQuotes()">New Quote</button>
             </div>            </div>
