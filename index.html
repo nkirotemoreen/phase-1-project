@@ -1,47 +1,42 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<!-- Linking Your CSS File -->
-	<link rel="stylesheet" href="./css/style.css"/>
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote-App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    
-      <!--quotebox-->
-      <div class ="block text-center">
-          <div class = "quote-box block__main block__front">
-
-      <!-- Quote to be Displayed Here -->
-      <span class = "quote">
-    
-        <!-- Hyphen is Displayed  -->
-        <i class="fas fa-2x fa-quote-left"></i>         
-        <!-- Quote Text -->
-        <span class = "text">
-        Quote To be Displayed Here
-        </span>
-        <i class="fas fa-quote-right"></i>
-      </span>
-      <!-- Author to be Displayed Here -->
-      <div class = "author">
-        Author to be Displayed Here
-      </div>
-      <a  class = "new-quote btn btn-default" 
-          onclick="newQuote()">New Quote</a>
+    <div class="container">
+        <div class="quote-box">
+            <div class="quote-text">
+                <!--get the quotes-->
+                <i class="fas fa-quote-left"></i>
+          <p class="text" id='text'>Quote to be displayed here</p>
+          <i class="fas fa-quote-right"></i>
+            </div>
+            <div class="author">
+                <span>~</span>
+                <span class="name" id="author">Moreen</span>
+            </div>
+        </div>
+        <!--elements-->
+        <div class = "buttons">
+            <div class = "features">
+                <ul>
+                    <li class="speech"><i class="fas fa-volume-up"></i></li>
+                    <li class="copy"><i class="fas fa-copy"></i></li>
+<a class="twitter-share-button"
+  href="https://twitter.com/intent/tweet?text=Hello%20world"
+  data-size="large">
+Tweet</a>                  </ul>
+                  <button class = "new-quote btn btn-default" 
+                  onclick="fetchQuotes()">New Quote</button>
+            </div>            </div>
+        </div>
     </div>
-    <div class="features">
-      <ul>
-        <li class="speech"><i class="fas fa-volume-up"></i></li>
-        <li class="copy"><i class="fas fa-copy"></i></li>
-        <li class="twitter"><i class="fab fa-twitter"></i></li>
-      </ul>
-      
-    </div>
-
-
-<!-- Linking Your JavaScript File -->
-<script src="./js/script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
-	
-</html
+</html>
