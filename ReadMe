@@ -1,0 +1,9 @@
+Quote generator Web-App
+author -Moreen Isaac
+Description: This is a quote generator web app that will generate random quotes .
+    all users have to do is click on the new-quote button to get a new quote.
+
+Users can like,copy and share the quote.
+
+It is created using Html,css and JavaScript.
+link to the api used = "https://type.fit/api/quotes";
